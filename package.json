@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.51",
+    "task-master-ai": "^0.20.0"
+  },
+  "scripts": {
+    "taskmaster": "npx task-master-ai"
+  }
+}
