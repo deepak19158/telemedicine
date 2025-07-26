@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRequireRole } from '../../../../lib/hooks/useAuth'
 import { useApi } from '../../../../lib/hooks/useApi'
+import { apiClient } from '../../../../lib/api-client'
 import { Users, Search, Calendar, FileText, Phone, Mail, MapPin, Heart, RefreshCw, XCircle } from 'lucide-react'
 
 export default function DoctorPatients() {
@@ -11,15 +12,26 @@ export default function DoctorPatients() {
   const [statusFilter, setStatusFilter] = useState('all')
   const [riskFilter, setRiskFilter] = useState('all')
   
-  // Fetch patient data
+  // Fetch patient data using correct API client pattern
   const { 
     data: patientsData, 
     loading: patientsLoading, 
     error: patientsError,
     refetch: refetchPatients 
-  } = useApi('/api/doctors/patients', {
-    method: 'GET'
-  })
+  } = useApi(() => apiClient.doctor.getPatients({
+    search: searchQuery || undefined,
+    status: statusFilter !== 'all' ? statusFilter : undefined,
+    riskLevel: riskFilter !== 'all' ? riskFilter : undefined
+  }))
+
+  // Refetch when filters change (with debounce for search)
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      refetchPatients()
+    }, searchQuery ? 500 : 0) // 500ms debounce for search, immediate for other filters
+
+    return () => clearTimeout(timeoutId)
+  }, [searchQuery, statusFilter, riskFilter, refetchPatients])
 
   if (isLoading || patientsLoading) {
     return (
@@ -50,7 +62,7 @@ export default function DoctorPatients() {
     )
   }
 
-  // Get patients from API data
+  // Get patients from API data (already filtered server-side)
   const allPatients = patientsData?.patients || []
   const stats = patientsData?.stats || {
     total: 0,
@@ -59,18 +71,8 @@ export default function DoctorPatients() {
     highRisk: 0
   }
 
-  // Filter patients based on search and filters
-  const filteredPatients = allPatients.filter(patient => {
-    const matchesSearch = !searchQuery || 
-      patient.profile?.name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      patient._id?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      patient.email?.toLowerCase().includes(searchQuery.toLowerCase())
-    
-    const matchesStatus = statusFilter === 'all' || patient.status === statusFilter
-    const matchesRisk = riskFilter === 'all' || patient.riskLevel === riskFilter
-    
-    return matchesSearch && matchesStatus && matchesRisk
-  })
+  // Use the data as-is since filtering is done server-side
+  const filteredPatients = allPatients
 
   const getStatusBadge = (status: string) => {
     switch (status) {

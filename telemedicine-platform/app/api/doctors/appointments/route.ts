@@ -28,10 +28,19 @@ export async function GET(request: NextRequest) {
     const doctorId = session.user.id
     const { searchParams } = new URL(request.url)
     const status = searchParams.get('status')
-    const period = searchParams.get('period') || '30'
+    const period = searchParams.get('period') || searchParams.get('days') || '30'
     const date = searchParams.get('date')
     const page = parseInt(searchParams.get('page') || '1')
     const limit = parseInt(searchParams.get('limit') || '10')
+    
+    console.log('🔍 Doctor appointments API called:', {
+      doctorId,
+      status,
+      period,
+      date,
+      page,
+      limit
+    })
 
     // Build filter
     const filter: any = { doctorId }
@@ -96,20 +105,42 @@ export async function GET(request: NextRequest) {
       ]).then(result => result[0]?.total || 0)
     }
 
-    return NextResponse.json({
+    const responseData = {
       appointments,
-      stats,
+      stats: {
+        total: totalAppointments,
+        today: stats.todayAppointments,
+        completed: stats.completedAppointments,
+        pending: stats.pendingApproval,
+        uniquePatients: stats.uniquePatients
+      },
       pagination: {
         current: page,
         pages: Math.ceil(totalAppointments / limit),
         total: totalAppointments
       }
+    }
+    
+    console.log('✅ Doctor appointments API response:', {
+      appointmentsCount: appointments.length,
+      stats: responseData.stats,
+      pagination: responseData.pagination
+    })
+    
+    return NextResponse.json({
+      success: true,
+      data: responseData,
+      message: `Found ${appointments.length} appointments`
     })
 
   } catch (error) {
-    console.error('Error fetching doctor appointments:', error)
+    console.error('❌ Error fetching doctor appointments:', error)
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { 
+        success: false,
+        error: error instanceof Error ? error.message : 'Internal server error',
+        data: null
+      },
       { status: 500 }
     )
   }

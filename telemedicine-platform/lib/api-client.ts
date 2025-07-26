@@ -27,11 +27,20 @@ class ApiClient {
     endpoint: string, 
     options: ApiRequestOptions = {}
   ): Promise<ApiResponse<T>> {
+    const requestStartTime = Date.now()
     try {
       const { method = 'GET', body, headers = {}, isFormData = false } = options
 
+      console.log(`🚀 API Request starting: ${method} ${endpoint}`)
+
       // Get session for authentication
       const session = await getSession()
+      
+      console.log('🔐 Session status:', { 
+        hasSession: !!session, 
+        userId: session?.user?.id?.slice(-6), 
+        role: session?.user?.role 
+      })
       
       // For authenticated requests, we'll rely on Next.js cookies
       // NextAuth automatically handles authentication via httpOnly cookies
@@ -56,15 +65,29 @@ class ApiClient {
       }
 
       // Make the request with credentials to include cookies
-      const response = await fetch(`${this.baseUrl}/api${endpoint}`, {
+      const fullUrl = `${this.baseUrl}/api${endpoint}`
+      console.log(`📡 Making request to: ${fullUrl}`)
+      
+      const response = await fetch(fullUrl, {
         ...requestOptions,
         credentials: 'include' // Include cookies for authentication
       })
       
+      const requestDuration = Date.now() - requestStartTime
+      console.log(`⏱️ Request completed in ${requestDuration}ms - Status: ${response.status}`)
+      
       // Parse response
       const data = await response.json()
+      console.log(`📥 Response data:`, { 
+        success: data.success, 
+        hasData: !!data.data, 
+        dataKeys: data.data ? Object.keys(data.data) : [],
+        error: data.error,
+        status: response.status
+      })
 
       if (!response.ok) {
+        console.log(`❌ Request failed:`, { status: response.status, error: data.error, data })
         return {
           success: false,
           error: data.error || `HTTP ${response.status}: ${response.statusText}`,
@@ -72,13 +95,16 @@ class ApiClient {
         }
       }
 
+      console.log(`✅ Request successful`)
       return {
         success: true,
         data,
         message: data.message
       }
     } catch (error) {
-      console.error('API Request Error:', error)
+      const requestDuration = Date.now() - requestStartTime
+      console.error(`💥 API Request Error after ${requestDuration}ms:`, error)
+      console.error(`Failed endpoint: ${endpoint}`)
       return {
         success: false,
         error: error instanceof Error ? error.message : 'Network error occurred'
@@ -146,7 +172,44 @@ class ApiClient {
     },
     
     getSpecializations: () => 
-      this.makeRequest('/doctors/specializations')
+      this.makeRequest('/doctors/specializations'),
+    
+    // Doctor Dashboard APIs
+    getDashboard: () => 
+      this.makeRequest('/doctors/dashboard'),
+    
+    // Doctor Appointments APIs
+    getAppointments: (params: Record<string, any> = {}) => {
+      console.log('🔍 API Client: getAppointments called with params:', params)
+      const filteredParams = Object.fromEntries(
+        Object.entries(params).filter(([_, value]) => value !== undefined && value !== null)
+      )
+      const queryString = Object.keys(filteredParams).length 
+        ? `?${new URLSearchParams(filteredParams).toString()}` 
+        : ''
+      console.log('🔗 API Client: Final URL will be /doctors/appointments' + queryString)
+      return this.makeRequest(`/doctors/appointments${queryString}`)
+    },
+    
+    updateAppointment: (appointmentId: string, updateData: any) => 
+      this.makeRequest(`/doctors/appointments/${appointmentId}`, {
+        method: 'PUT',
+        body: updateData
+      }),
+    
+    addAppointmentNotes: (appointmentId: string, notes: string) => 
+      this.makeRequest(`/doctors/appointments/${appointmentId}/notes`, {
+        method: 'POST',
+        body: { notes }
+      }),
+    
+    // Doctor Patients APIs
+    getPatients: (params: Record<string, any> = {}) => {
+      const queryString = Object.keys(params).length 
+        ? `?${new URLSearchParams(params).toString()}` 
+        : ''
+      return this.makeRequest(`/doctors/patients${queryString}`)
+    }
   }
 
   // Admin Management APIs
