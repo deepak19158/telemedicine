@@ -23,6 +23,14 @@ export interface IUser extends Document {
   }
   isActive: boolean
   isVerified: boolean
+  // Doctor approval tracking
+  registrationStatus?: 'pending_approval' | 'approved' | 'rejected'
+  approvedAt?: Date
+  approvedBy?: mongoose.Types.ObjectId
+  rejectedAt?: Date
+  rejectedBy?: mongoose.Types.ObjectId
+  approvalReason?: string
+  rejectionReason?: string
   // Password reset fields
   passwordResetToken?: string
   passwordResetExpires?: Date
@@ -119,6 +127,34 @@ const userSchema = new Schema<IUser>({
   },
   emailVerificationExpires: {
     type: Date
+  },
+  // Doctor approval tracking
+  registrationStatus: {
+    type: String,
+    enum: ['pending_approval', 'approved', 'rejected'],
+    default: function(this: IUser) {
+      return this.role === 'doctor' ? 'pending_approval' : 'approved'
+    }
+  },
+  approvedAt: {
+    type: Date
+  },
+  approvedBy: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
+  rejectedAt: {
+    type: Date
+  },
+  rejectedBy: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
+  approvalReason: {
+    type: String
+  },
+  rejectionReason: {
+    type: String
   }
 }, {
   timestamps: true

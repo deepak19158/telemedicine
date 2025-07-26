@@ -1,10 +1,10 @@
 {
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/admin/users/route": "app/api/admin/users/route.js",
-  "/api/admin/users/analytics/route": "app/api/admin/users/analytics/route.js",
-  "/(dashboard)/admin/page": "app/(dashboard)/admin/page.js",
-  "/(dashboard)/admin/patients/page": "app/(dashboard)/admin/patients/page.js",
-  "/(dashboard)/admin/users/page": "app/(dashboard)/admin/users/page.js",
-  "/(dashboard)/admin/doctors/page": "app/(dashboard)/admin/doctors/page.js",
-  "/(dashboard)/admin/agents/page": "app/(dashboard)/admin/agents/page.js"
+  "/page": "app/page.js",
+  "/api/patients/appointments/route": "app/api/patients/appointments/route.js",
+  "/(dashboard)/patient/page": "app/(dashboard)/patient/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(dashboard)/doctor/patients/page": "app/(dashboard)/doctor/patients/page.js",
+  "/(dashboard)/patient/doctor/page": "app/(dashboard)/patient/doctor/page.js",
+  "/(dashboard)/patient/appointments/page": "app/(dashboard)/patient/appointments/page.js"
 }

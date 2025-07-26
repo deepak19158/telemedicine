@@ -25,8 +25,13 @@ export default withAuth(
       }
     }
 
-    // Check if user is active
+    // Check if user is active or pending approval
     if (token && !token.isActive) {
+      // If doctor with pending approval, redirect to pending page
+      if (token.role === 'doctor') {
+        return NextResponse.redirect(new URL('/pending-approval', req.url))
+      }
+      // For other inactive users, redirect to inactive page
       return NextResponse.redirect(new URL('/inactive', req.url))
     }
 
@@ -38,7 +43,7 @@ export default withAuth(
         const { pathname } = req.nextUrl
         
         // Public routes that don't require authentication
-        const publicRoutes = ['/', '/login', '/register', '/api/auth']
+        const publicRoutes = ['/', '/login', '/register', '/pending-approval', '/api/auth']
         
         // Check if route is public
         if (publicRoutes.some(route => pathname.startsWith(route))) {
@@ -56,11 +61,14 @@ export const config = {
   matcher: [
     /*
      * Match all request paths except for the ones starting with:
+     * - api/auth (NextAuth endpoints)
      * - _next/static (static files)
      * - _next/image (image optimization files)
+     * - _next/webpack-hmr (hot reload)
      * - favicon.ico (favicon file)
      * - public files (public folder)
+     * - ws:// or wss:// (WebSocket connections)
      */
-    '/((?!_next/static|_next/image|favicon.ico|public).*)'
+    '/((?!api/auth|_next/static|_next/image|_next/webpack-hmr|favicon.ico|public|ws:|wss:).*)'
   ]
 }

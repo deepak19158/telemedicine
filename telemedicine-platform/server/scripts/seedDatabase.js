@@ -77,7 +77,8 @@ async function generateUsers() {
         }
       },
       isVerified: true,
-      isActive: true
+      isActive: true,
+      registrationStatus: 'approved'
     });
   }
 

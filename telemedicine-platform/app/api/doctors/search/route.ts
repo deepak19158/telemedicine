@@ -25,7 +25,8 @@ export async function GET(request: NextRequest) {
     const query: any = {
       role: 'doctor',
       isActive: true,
-      isVerified: true
+      isVerified: true,
+      registrationStatus: 'approved'
     }
 
     // Text search in name, specialization, about
@@ -138,7 +139,7 @@ export async function GET(request: NextRequest) {
 
     // Get filter statistics
     const filterStats = await User.aggregate([
-      { $match: { role: 'doctor', isActive: true, isVerified: true } },
+      { $match: { role: 'doctor', isActive: true, isVerified: true, registrationStatus: 'approved' } },
       {
         $group: {
           _id: null,
