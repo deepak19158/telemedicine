@@ -1,0 +1,2561 @@
+
+> telemedicine-platform@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'appDir' at "experimental"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 21.2s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 6.6s (220 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/cache/webpack/server-development/0.pack.gz_'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/cache/webpack/client-development/0.pack.gz_'
+ ✓ Compiled /api/auth/[...nextauth] in 84.1s (1114 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.3s (1094 modules)
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ○ Compiling /_error ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/cache/webpack/client-development-fallback/0.pack.gz_'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/cache/webpack/client-development-fallback/0.pack.gz_'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/cache/webpack/client-development-fallback/0.pack.gz_'
+ ✓ Compiled /_error in 12.4s (1318 modules)
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ GET /api/auth/session 500 in 67078ms
+ GET /api/auth/session 500 in 140232ms
+ GET /api/auth/session 500 in 85453ms
+ GET /api/auth/session 500 in 71260ms
+ GET /admin/users 500 in 103386ms
+ ⨯ Error: Cannot find module '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/api/auth/[...nextauth]/route.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/api/auth/_log'
+}
+ POST /api/auth/_log 500 in 3370ms
+ ⨯ Error: Cannot find module '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/api/auth/[...nextauth]/route.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/api/auth/_log'
+}
+ ⨯ Error: Cannot find module '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/api/auth/[...nextauth]/route.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/api/auth/_log'
+}
+ ⨯ Error: Cannot find module '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/api/auth/[...nextauth]/route.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/api/auth/_log'
+}
+ POST /api/auth/_log 500 in 4435ms
+ POST /api/auth/_log 500 in 4438ms
+ POST /api/auth/_log 500 in 4442ms
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_document.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_document.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async pipe.req.req (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 622ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 120ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next-auth' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js', but to 'Error: Can't resolve './vendor-chunks/next-auth' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next-auth (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_app.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_app.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next-auth' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js', but to 'Error: Can't resolve './vendor-chunks/next-auth' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next-auth (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+ ○ Compiling / ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next-auth' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js', but to 'Error: Can't resolve './vendor-chunks/next-auth' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next-auth (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/vendor-chunks/next-auth.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-app-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-app-loader.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/bundle5.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/compiled/webpack/webpack.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/plugins/define-env-plugin.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/swc/index.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+ ✓ Compiled / in 2.6s (1335 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js:353:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js:356:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:816:17)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/'
+}
+ GET / 500 in 3866ms
+ ⨯ Error: Cannot find module './vendor-chunks/@opentelemetry.js'
+Require stack:
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:198:28)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js:162:22)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:190:47
+    at Object.<anonymous> (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/_not-found/page.js:193:3)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/webpack-runtime.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/app/page.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+    at Object.openSync (node:fs:596:3)
+    at readFileSync (node:fs:464:35)
+    at loadManifest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-manifest.js:35:54)
+    at loadManifestWithRetries (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2210:40)
+    at async pipe.req.req (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/base-server.js:920:25)
+    at async /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/fallback-build-manifest.json'
+}
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 366ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 54ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/_error' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js', but to 'Error: Can't resolve '../../../../.next/server/pages/_error' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/_error (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/_error' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js', but to 'Error: Can't resolve '../../../../.next/server/pages/_error' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/_error (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_error.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/handle-externals.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/_app' in /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_app.js', but to 'Error: Can't resolve '../../../../.next/server/pages/_app' in '/mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/_app (expected /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/.next/server/pages/_app.js)
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/require.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/handle-externals.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /mnt/c/Users/HP/Desktop/telemedicine/telemedicine-platform/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+ GET / 404 in 494ms
+ GET / 404 in 418ms
+ GET / 404 in 391ms
+ GET / 404 in 409ms
+ GET / 404 in 481ms
+ GET / 404 in 533ms
+ GET / 404 in 324ms
+ GET / 404 in 780ms
+ GET / 404 in 343ms
+ GET / 404 in 433ms
+ GET / 404 in 662ms
+ GET / 404 in 362ms
+ GET / 404 in 519ms
+ GET / 404 in 315ms
+ GET / 404 in 486ms
+ GET / 404 in 344ms
+ GET / 404 in 336ms
+ GET / 404 in 322ms
+ GET / 404 in 466ms
+ GET / 404 in 466ms
+ GET / 404 in 440ms
+ GET / 404 in 561ms
+ GET / 404 in 384ms
+ GET / 404 in 310ms
+ GET / 404 in 362ms
+ GET / 404 in 423ms
+ GET / 404 in 346ms
+ GET / 404 in 371ms
+ GET / 404 in 497ms
+ GET / 404 in 391ms
+ GET / 404 in 323ms
+ GET / 404 in 486ms
+ GET / 404 in 328ms
+ GET / 404 in 471ms
+ GET / 404 in 481ms
+ GET / 404 in 360ms
+ GET / 404 in 429ms
+ GET / 404 in 333ms
+ GET / 404 in 407ms
+ GET / 404 in 326ms
+ GET / 404 in 343ms
+ GET / 404 in 366ms
+ GET / 404 in 417ms
+ GET / 404 in 357ms
+ GET / 404 in 482ms
+ GET / 404 in 384ms
+ GET / 404 in 489ms
+ GET / 404 in 442ms
+ GET / 404 in 418ms
+ GET / 404 in 433ms
+ GET / 404 in 388ms
+ GET / 404 in 574ms
+ GET / 404 in 332ms
+ GET / 404 in 324ms
+ GET / 404 in 566ms
+ GET / 404 in 320ms
+ GET / 404 in 350ms
+ GET / 404 in 397ms
+ GET / 404 in 417ms
+ GET / 404 in 568ms
+ GET / 404 in 702ms
+ GET / 404 in 705ms
+ GET / 404 in 377ms
+ GET / 404 in 335ms
+ GET / 404 in 453ms
+ GET / 404 in 303ms
+ GET / 404 in 290ms
+ GET / 404 in 426ms
+ GET / 404 in 474ms
+ GET / 404 in 482ms
+ GET / 404 in 318ms
+ GET / 404 in 322ms
+ GET / 404 in 369ms
+ GET / 404 in 346ms
+ GET / 404 in 317ms
+ GET / 404 in 472ms
+ GET / 404 in 338ms
+ GET / 404 in 497ms
+ GET / 404 in 480ms
+ GET / 404 in 419ms
+ GET / 404 in 670ms
+ GET / 404 in 455ms
+ GET / 404 in 490ms
+ GET / 404 in 413ms
+ GET / 404 in 401ms
+ GET / 404 in 415ms
+ GET / 404 in 464ms
+ GET / 404 in 407ms
+ GET / 404 in 328ms
+ GET / 404 in 565ms
+ GET / 404 in 468ms
+ GET / 404 in 378ms
+ GET / 404 in 339ms
+ GET / 404 in 530ms
+ GET / 404 in 419ms
+ GET / 404 in 337ms
+ GET / 404 in 441ms
+ GET / 404 in 413ms
+ GET / 404 in 328ms
+ GET / 404 in 359ms
+ GET / 404 in 285ms
+ GET / 404 in 323ms
+ GET / 404 in 434ms
+ GET / 404 in 318ms
+ GET / 404 in 574ms
+ GET / 404 in 300ms
+ GET / 404 in 407ms
+ GET / 404 in 323ms
+ GET / 404 in 314ms
+ GET / 404 in 475ms
+ GET / 404 in 383ms
+ GET / 404 in 502ms
+ GET / 404 in 533ms
+ GET / 404 in 420ms
+ GET / 404 in 390ms
+ GET / 404 in 400ms
+ GET / 404 in 437ms
+ GET / 404 in 432ms
+ GET / 404 in 689ms
+ GET / 404 in 632ms
+ GET / 404 in 660ms
+ GET / 404 in 717ms
+ GET / 404 in 472ms
+ GET / 404 in 461ms
+ GET / 404 in 420ms
+ GET / 404 in 587ms
+ GET / 404 in 520ms
+ GET / 404 in 476ms
+ GET / 404 in 517ms
+ GET / 404 in 584ms
+ GET / 404 in 506ms
+ GET / 404 in 459ms
+ GET / 404 in 482ms
+ GET / 404 in 410ms
+ GET / 404 in 491ms
+ GET / 404 in 613ms
+ GET / 404 in 406ms
+ GET / 404 in 530ms
+ GET / 404 in 421ms
+ GET / 404 in 523ms
+ GET / 404 in 378ms
+ GET / 404 in 470ms
+ GET / 404 in 751ms
+ GET / 404 in 421ms
+ GET / 404 in 505ms
+ GET / 404 in 517ms
+ GET / 404 in 403ms
+ GET / 404 in 446ms
+ GET / 404 in 352ms
+ GET / 404 in 952ms
+ GET / 404 in 1181ms
+ GET / 404 in 433ms
+ GET / 404 in 1371ms
+ GET / 404 in 876ms
+ GET / 404 in 851ms
+ GET / 404 in 470ms
+ GET / 404 in 544ms
+ GET / 404 in 703ms
+ GET / 404 in 384ms
+ GET / 404 in 444ms
+ GET / 404 in 436ms
+ GET / 404 in 445ms
+ GET / 404 in 386ms
+ GET / 404 in 586ms
+ GET / 404 in 465ms
+ GET / 404 in 717ms
+ GET / 404 in 662ms
+ GET / 404 in 488ms
+ GET / 404 in 541ms
+ GET / 404 in 637ms
+ GET / 404 in 412ms
+ GET / 404 in 482ms
+ GET / 404 in 506ms
+ GET / 404 in 415ms
+ GET / 404 in 635ms
+ GET / 404 in 501ms
+ GET / 404 in 473ms
+ GET / 404 in 393ms
+ GET / 404 in 400ms
+ GET / 404 in 538ms
+ GET / 404 in 463ms
+ GET / 404 in 481ms
+ GET / 404 in 475ms
+ GET / 404 in 506ms
+ GET / 404 in 477ms
+ GET / 404 in 360ms
+ GET / 404 in 577ms
+ GET / 404 in 446ms
+ GET / 404 in 526ms
+ GET / 404 in 446ms
+ GET / 404 in 755ms
+ GET / 404 in 512ms
+ GET / 404 in 581ms
+ GET / 404 in 727ms
+ GET / 404 in 884ms
+ GET / 404 in 694ms
+ GET / 404 in 405ms
+ GET / 404 in 483ms
+ GET / 404 in 480ms
+ GET / 404 in 509ms
+ GET / 404 in 496ms
+ GET / 404 in 502ms
+ GET / 404 in 526ms
+ GET / 404 in 506ms
+ GET / 404 in 645ms
+ GET / 404 in 898ms
+ GET / 404 in 616ms
+ GET / 404 in 568ms
+ GET / 404 in 770ms
+ GET / 404 in 512ms
+ GET / 404 in 603ms
+ GET / 404 in 710ms
+ GET / 404 in 515ms
+ GET / 404 in 443ms
+ GET / 404 in 431ms
+ GET / 404 in 600ms
+ GET / 404 in 459ms
+ GET / 404 in 438ms
+ GET / 404 in 727ms
+ GET / 404 in 489ms
+ GET / 404 in 472ms
+ GET / 404 in 598ms
+ GET / 404 in 596ms
+ GET / 404 in 542ms
+ GET / 404 in 703ms
+ GET / 404 in 547ms
+ GET / 404 in 441ms
+ GET / 404 in 396ms
+ GET / 404 in 1153ms
+ GET / 404 in 592ms
+ GET / 404 in 745ms
+ GET / 404 in 468ms
+ GET / 404 in 550ms
+ GET / 404 in 506ms
+ GET / 404 in 778ms
+ GET / 404 in 567ms
+ GET / 404 in 430ms
+ GET / 404 in 559ms
+ GET / 404 in 669ms
+ GET / 404 in 530ms
+ GET / 404 in 446ms
+ GET / 404 in 451ms
+ GET / 404 in 776ms
+ GET / 404 in 520ms
+ GET / 404 in 794ms
+ GET / 404 in 367ms
+ GET / 404 in 1148ms
+ GET / 404 in 746ms
+ GET / 404 in 659ms
+ GET / 404 in 390ms
+ GET / 404 in 542ms
+ GET / 404 in 673ms
+ GET / 404 in 447ms
+ GET / 404 in 379ms
+ GET / 404 in 601ms
+ GET / 404 in 357ms
+ GET / 404 in 469ms
+ GET / 404 in 636ms
+ GET / 404 in 661ms
+ GET / 404 in 939ms
+ GET / 404 in 422ms
+ GET / 404 in 689ms
+ GET / 404 in 1192ms
+ GET / 404 in 1218ms
+ GET / 404 in 685ms
+ GET / 404 in 489ms
+ GET / 404 in 567ms
+ GET / 404 in 586ms
+ GET / 404 in 511ms
+ GET / 404 in 563ms
+ GET / 404 in 510ms
+ GET / 404 in 525ms
+ GET / 404 in 558ms
+ GET / 404 in 492ms
+ GET / 404 in 536ms
+ GET / 404 in 560ms
+ GET / 404 in 595ms
+ GET / 404 in 832ms
+ GET / 404 in 599ms
+ GET / 404 in 431ms
+ GET / 404 in 719ms
+ GET / 404 in 412ms
+ GET / 404 in 554ms
+ GET / 404 in 411ms
+ GET / 404 in 548ms
+ GET / 404 in 420ms
+ GET / 404 in 509ms
+ GET / 404 in 620ms
+ GET / 404 in 451ms
+ GET / 404 in 468ms
+ GET / 404 in 467ms
+ GET / 404 in 513ms
+ GET / 404 in 436ms
+ GET / 404 in 547ms
+ GET / 404 in 470ms
+ GET / 404 in 463ms
+ GET / 404 in 516ms
+ GET / 404 in 696ms
+ GET / 404 in 411ms
+ GET / 404 in 454ms
+ GET / 404 in 388ms
+ GET / 404 in 496ms
+ GET / 404 in 396ms
+ GET / 404 in 393ms
+ GET / 404 in 314ms
+ GET / 404 in 307ms
+ GET / 404 in 342ms
+ GET / 404 in 352ms
+ GET / 404 in 441ms
+ GET / 404 in 499ms
+ GET / 404 in 346ms
+ GET / 404 in 322ms
+ GET / 404 in 380ms
+ GET / 404 in 339ms
+ GET / 404 in 413ms
+ GET / 404 in 420ms
+ GET / 404 in 779ms
+ GET / 404 in 940ms
+ GET / 404 in 510ms
+ GET / 404 in 1140ms
+ GET / 404 in 1100ms
+ GET / 404 in 468ms
+ GET / 404 in 474ms
+ GET / 404 in 479ms
+ GET / 404 in 592ms
+ GET / 404 in 343ms
+ GET / 404 in 554ms
+ GET / 404 in 479ms
+ GET / 404 in 386ms
+ GET / 404 in 340ms
+ GET / 404 in 343ms
+ GET / 404 in 331ms
+ GET / 404 in 337ms
+ GET / 404 in 411ms
+ GET / 404 in 307ms
+ GET / 404 in 365ms
+ GET / 404 in 333ms
+ GET / 404 in 328ms
+ GET / 404 in 338ms
+ GET / 404 in 382ms
+ GET / 404 in 380ms
+ GET / 404 in 305ms
+ GET / 404 in 311ms
+ GET / 404 in 282ms
+ GET / 404 in 479ms
+ GET / 404 in 639ms
+ GET / 404 in 598ms
+ GET / 404 in 514ms
+ GET / 404 in 762ms
+ GET / 404 in 427ms
+ GET / 404 in 412ms
+ GET / 404 in 538ms
+ GET / 404 in 424ms
+ GET / 404 in 521ms
+ GET / 404 in 530ms
+ GET / 404 in 451ms
+ GET / 404 in 491ms
+ GET / 404 in 442ms
+ GET / 404 in 443ms
+ GET / 404 in 401ms
+ GET / 404 in 380ms
+ GET / 404 in 358ms
+ GET / 404 in 806ms
+ GET / 404 in 471ms
+ GET / 404 in 861ms
+ GET / 404 in 540ms
+ GET / 404 in 573ms
+ GET / 404 in 927ms
+ GET / 404 in 642ms
+ GET / 404 in 717ms
+ GET / 404 in 721ms
+ GET / 404 in 485ms
+ GET / 404 in 653ms
+ GET / 404 in 503ms
+ GET / 404 in 461ms
+ GET / 404 in 444ms
+ GET / 404 in 431ms
+ GET / 404 in 720ms
+ GET / 404 in 548ms
+ GET / 404 in 454ms
+ GET / 404 in 465ms
+ GET / 404 in 437ms
+ GET / 404 in 4163ms
+ GET / 404 in 567ms
+ GET / 404 in 468ms
+ GET / 404 in 541ms
+ GET / 404 in 622ms
+ GET / 404 in 433ms
+ GET / 404 in 522ms
+ GET / 404 in 475ms
+ GET / 404 in 483ms
+ GET / 404 in 482ms
+ GET / 404 in 419ms
+ GET / 404 in 462ms
+ GET / 404 in 416ms
+ GET / 404 in 735ms
+ GET / 404 in 438ms
+ GET / 404 in 471ms
+ GET / 404 in 448ms
+ GET / 404 in 466ms
+ GET / 404 in 459ms
+ GET / 404 in 458ms
+ GET / 404 in 436ms
+ GET / 404 in 555ms
+ GET / 404 in 434ms
+ GET / 404 in 492ms
+ GET / 404 in 480ms
+ GET / 404 in 460ms
+ GET / 404 in 406ms
+ GET / 404 in 529ms
+ GET / 404 in 456ms
+ GET / 404 in 456ms
+ GET / 404 in 415ms
+ GET / 404 in 462ms
+ GET / 404 in 432ms
+ GET / 404 in 582ms
+ GET / 404 in 702ms
+ GET / 404 in 1872ms
+ GET / 404 in 492ms
+ GET / 404 in 580ms
+ GET / 404 in 1007ms
+ GET / 404 in 703ms
+ GET / 404 in 510ms
+ GET / 404 in 436ms
+ GET / 404 in 556ms
+ GET / 404 in 457ms
+ GET / 404 in 442ms
+ GET / 404 in 485ms
+ GET / 404 in 475ms
+ GET / 404 in 519ms
+ GET / 404 in 555ms
+ GET / 404 in 494ms
+ GET / 404 in 526ms
+ GET / 404 in 465ms
+ GET / 404 in 465ms
+ GET / 404 in 451ms
+ GET / 404 in 515ms
+ GET / 404 in 460ms
+ GET / 404 in 510ms
+ GET / 404 in 584ms
+ GET / 404 in 497ms
+ GET / 404 in 430ms
+ GET / 404 in 474ms
+ GET / 404 in 473ms
+ GET / 404 in 720ms
+ GET / 404 in 657ms
+ GET / 404 in 468ms
+ GET / 404 in 449ms
+ GET / 404 in 441ms
+ GET / 404 in 468ms
+ GET / 404 in 820ms
+ GET / 404 in 522ms
+ GET / 404 in 430ms
+ GET / 404 in 575ms
+ GET / 404 in 476ms
+ GET / 404 in 455ms
+ GET / 404 in 424ms
+ GET / 404 in 471ms
+ GET / 404 in 540ms
+ GET / 404 in 462ms
+ GET / 404 in 552ms
+ GET / 404 in 606ms
+ GET / 404 in 568ms
+ GET / 404 in 564ms
+ GET / 404 in 413ms
+ GET / 404 in 483ms
+ GET / 404 in 464ms
+ GET / 404 in 429ms
+ GET / 404 in 443ms
+ GET / 404 in 488ms
+ GET / 404 in 433ms
+ GET / 404 in 450ms
+ GET / 404 in 429ms
+ GET / 404 in 413ms
+ GET / 404 in 420ms
+ GET / 404 in 419ms
+ GET / 404 in 471ms
+ GET / 404 in 394ms
+ GET / 404 in 445ms
+ GET / 404 in 437ms
+ GET / 404 in 465ms
+ GET / 404 in 437ms
+ GET / 404 in 906ms
+ GET / 404 in 463ms
+ GET / 404 in 539ms
+ GET / 404 in 517ms
+ GET / 404 in 466ms
+ GET / 404 in 513ms
+ GET / 404 in 437ms
+ GET / 404 in 496ms
+ GET / 404 in 517ms
+ GET / 404 in 568ms
+ GET / 404 in 479ms
+ GET / 404 in 891ms
+ GET / 404 in 508ms
+ GET / 404 in 638ms
+ GET / 404 in 507ms
+ GET / 404 in 452ms
+ GET / 404 in 556ms
+ GET / 404 in 504ms
+ GET / 404 in 465ms
+ GET / 404 in 481ms
+ GET / 404 in 533ms
+ GET / 404 in 739ms
+ GET / 404 in 527ms
+ GET / 404 in 536ms
+ GET / 404 in 613ms
+ GET / 404 in 607ms
+ GET / 404 in 511ms
+ GET / 404 in 516ms
+ GET / 404 in 549ms
+ GET / 404 in 551ms
+ GET / 404 in 519ms
+ GET / 404 in 571ms
+ GET / 404 in 498ms
+ GET / 404 in 581ms
+ GET / 404 in 487ms
+ GET / 404 in 475ms
+ GET / 404 in 448ms
+ GET / 404 in 563ms
+ GET / 404 in 621ms
+ GET / 404 in 722ms
+ GET / 404 in 623ms
+ GET / 404 in 952ms
+ GET / 404 in 501ms
+ GET / 404 in 514ms
+ GET / 404 in 497ms
+ GET / 404 in 509ms
+ GET / 404 in 479ms
+ GET / 404 in 577ms
+ GET / 404 in 489ms
+ GET / 404 in 384ms
+ GET / 404 in 512ms
+ GET / 404 in 562ms
+ GET / 404 in 454ms
+ GET / 404 in 533ms
+ GET / 404 in 427ms
+ GET / 404 in 412ms
+ GET / 404 in 459ms
+ GET / 404 in 469ms
+ GET / 404 in 482ms
+ GET / 404 in 515ms
+ GET / 404 in 448ms
+ GET / 404 in 419ms
+ GET / 404 in 462ms
+ GET / 404 in 460ms
+ GET / 404 in 474ms
+ GET / 404 in 371ms
+ GET / 404 in 460ms
+ GET / 404 in 457ms
+ GET / 404 in 473ms
+ GET / 404 in 453ms
+ GET / 404 in 493ms
+ GET / 404 in 391ms
+ GET / 404 in 459ms
+ GET / 404 in 482ms
+ GET / 404 in 467ms
+ GET / 404 in 463ms
+ GET / 404 in 435ms
+ GET / 404 in 474ms
+ GET / 404 in 438ms
+ GET / 404 in 455ms
+ GET / 404 in 522ms
+ GET / 404 in 446ms
+ GET / 404 in 490ms
+ GET / 404 in 462ms
+ GET / 404 in 353ms
+ GET / 404 in 479ms
+ GET / 404 in 482ms
+ GET / 404 in 582ms
+ GET / 404 in 428ms
+ GET / 404 in 421ms
+ GET / 404 in 469ms
+ GET / 404 in 466ms
+ GET / 404 in 479ms
+ GET / 404 in 473ms
+ GET / 404 in 497ms
+ GET / 404 in 480ms
+ GET / 404 in 462ms
+ GET / 404 in 440ms
+ GET / 404 in 475ms
+ GET / 404 in 346ms
+ GET / 404 in 390ms
+ GET / 404 in 461ms
+ GET / 404 in 367ms
+ GET / 404 in 608ms
+ GET / 404 in 504ms
+ GET / 404 in 525ms
+ GET / 404 in 476ms
+ GET / 404 in 594ms
+ GET / 404 in 425ms
+ GET / 404 in 427ms
+ GET / 404 in 626ms
+ GET / 404 in 534ms
+ GET / 404 in 487ms
+ GET / 404 in 429ms
+ GET / 404 in 458ms
+ GET / 404 in 315ms
+ GET / 404 in 464ms
+ GET / 404 in 481ms
+ GET / 404 in 618ms
+ GET / 404 in 383ms
+ GET / 404 in 575ms
+ GET / 404 in 394ms
+ GET / 404 in 559ms
+ GET / 404 in 444ms
+ GET / 404 in 342ms
+ GET / 404 in 457ms
+ GET / 404 in 518ms
+ GET / 404 in 480ms
+ GET / 404 in 403ms
+ GET / 404 in 448ms
+ GET / 404 in 423ms
+ GET / 404 in 556ms
+ GET / 404 in 508ms
+ GET / 404 in 478ms
+ GET / 404 in 473ms
+ GET / 404 in 403ms
+ GET / 404 in 610ms
+ GET / 404 in 411ms
+ GET / 404 in 494ms
+ GET / 404 in 346ms
+ GET / 404 in 391ms
+ GET / 404 in 337ms
+ GET / 404 in 467ms
+ GET / 404 in 311ms
+ GET / 404 in 572ms
+ GET / 404 in 457ms
+ GET / 404 in 472ms
+ GET / 404 in 469ms
+ GET / 404 in 585ms
+ GET / 404 in 370ms
+ GET / 404 in 507ms
+ GET / 404 in 464ms
+ GET / 404 in 540ms
+ GET / 404 in 427ms
+ GET / 404 in 474ms
+ GET / 404 in 668ms
+ GET / 404 in 516ms
+ GET / 404 in 503ms
+ GET / 404 in 335ms
+ GET / 404 in 361ms
+ GET / 404 in 492ms
+ GET / 404 in 518ms
+ GET / 404 in 482ms
+ GET / 404 in 321ms
+ GET / 404 in 467ms
+ GET / 404 in 460ms
+ GET / 404 in 405ms
+ GET / 404 in 324ms
+ GET / 404 in 473ms
+ GET / 404 in 456ms
+ GET / 404 in 365ms
+ GET / 404 in 366ms
+ GET / 404 in 451ms
+ GET / 404 in 326ms
+ GET / 404 in 465ms
+ GET / 404 in 412ms
+ GET / 404 in 446ms
+ GET / 404 in 318ms
+ GET / 404 in 314ms
+ GET / 404 in 386ms
+ GET / 404 in 448ms
+ GET / 404 in 370ms
+ GET / 404 in 380ms
+ GET / 404 in 320ms
+ GET / 404 in 339ms
+ GET / 404 in 304ms
+ GET / 404 in 303ms
+ GET / 404 in 332ms
+ GET / 404 in 365ms
+ GET / 404 in 318ms
+ GET / 404 in 344ms
+ GET / 404 in 334ms
+ GET / 404 in 315ms
+ GET / 404 in 337ms
+ GET / 404 in 321ms
+ GET / 404 in 325ms
+ GET / 404 in 313ms
+ GET / 404 in 362ms
+ GET / 404 in 341ms
+ GET / 404 in 329ms
+ GET / 404 in 369ms
+ GET / 404 in 462ms
+ GET / 404 in 324ms
+ GET / 404 in 324ms
+ GET / 404 in 333ms
+ GET / 404 in 322ms
+ GET / 404 in 314ms
+ GET / 404 in 343ms
+ GET / 404 in 304ms
+ GET / 404 in 432ms
+ GET / 404 in 332ms
+ GET / 404 in 320ms
+ GET / 404 in 367ms
+ GET / 404 in 293ms
+ GET / 404 in 360ms
+ GET / 404 in 304ms
+ GET / 404 in 335ms
+ GET / 404 in 453ms
+ GET / 404 in 393ms
+ GET / 404 in 345ms
+ GET / 404 in 431ms
+ GET / 404 in 316ms
+ GET / 404 in 346ms
+ GET / 404 in 443ms
+ GET / 404 in 331ms
+ GET / 404 in 391ms
+ GET / 404 in 377ms
+ GET / 404 in 420ms
+ GET / 404 in 415ms
+ GET / 404 in 406ms
+ GET / 404 in 406ms
+ GET / 404 in 462ms
+ GET / 404 in 320ms
+ GET / 404 in 601ms
+ GET / 404 in 354ms
+ GET / 404 in 336ms
+ GET / 404 in 327ms
+ GET / 404 in 322ms
+ GET / 404 in 324ms
+ GET / 404 in 354ms
+ GET / 404 in 290ms
+ GET / 404 in 414ms
+ GET / 404 in 444ms
+ GET / 404 in 324ms
+ GET / 404 in 375ms
+ GET / 404 in 336ms
+ GET / 404 in 326ms
+ GET / 404 in 328ms
+ GET / 404 in 410ms
+ GET / 404 in 541ms
+ GET / 404 in 455ms
+ GET / 404 in 377ms
+ GET / 404 in 426ms
+ GET / 404 in 385ms
+ GET / 404 in 450ms
+ GET / 404 in 349ms
+ GET / 404 in 431ms
+ GET / 404 in 485ms
+ GET / 404 in 404ms
+ GET / 404 in 392ms
+ GET / 404 in 424ms
+ GET / 404 in 424ms
+ GET / 404 in 429ms
+ GET / 404 in 339ms
+ GET / 404 in 420ms
+ GET / 404 in 643ms
+ GET / 404 in 394ms
+ GET / 404 in 390ms
+ GET / 404 in 428ms
+ GET / 404 in 322ms
+ GET / 404 in 480ms
+ GET / 404 in 440ms
+ GET / 404 in 546ms
+ GET / 404 in 371ms
+ GET / 404 in 426ms
+ GET / 404 in 401ms
+ GET / 404 in 466ms
+ GET / 404 in 461ms
+ GET / 404 in 372ms
+ GET / 404 in 412ms
+ GET / 404 in 406ms
+ GET / 404 in 351ms
+ GET / 404 in 478ms
+ GET / 404 in 352ms
+ GET / 404 in 389ms
+ GET / 404 in 360ms
+ GET / 404 in 519ms
+ GET / 404 in 521ms
+ GET / 404 in 333ms
+ GET / 404 in 440ms
+ GET / 404 in 378ms
+ GET / 404 in 418ms
+ GET / 404 in 516ms
+ GET / 404 in 405ms
+ GET / 404 in 483ms
+ GET / 404 in 489ms
+ GET / 404 in 471ms
+ GET / 404 in 479ms
+ GET / 404 in 502ms
+ GET / 404 in 503ms
+ GET / 404 in 445ms
+ GET / 404 in 339ms
+ GET / 404 in 519ms
+ GET / 404 in 492ms
+ GET / 404 in 310ms
+ GET / 404 in 450ms
+ GET / 404 in 478ms
+ GET / 404 in 313ms
+ GET / 404 in 346ms
+ GET / 404 in 472ms
+ GET / 404 in 469ms
+ GET / 404 in 491ms
+ GET / 404 in 501ms
+ GET / 404 in 603ms
+ GET / 404 in 544ms
+ GET / 404 in 490ms
+ GET / 404 in 503ms
+ GET / 404 in 490ms
+ GET / 404 in 417ms
+ GET / 404 in 497ms
+ GET / 404 in 345ms
+ GET / 404 in 442ms
+ GET / 404 in 370ms
+ GET / 404 in 391ms
+ GET / 404 in 437ms
+ GET / 404 in 347ms
+ GET / 404 in 519ms
+ GET / 404 in 372ms
+ GET / 404 in 487ms
+ GET / 404 in 346ms
+ GET / 404 in 708ms
+ GET / 404 in 405ms
+ GET / 404 in 445ms
+ GET / 404 in 344ms
+ GET / 404 in 335ms
+ GET / 404 in 487ms
+ GET / 404 in 340ms
+ GET / 404 in 624ms
+ GET / 404 in 475ms
+ GET / 404 in 519ms
+ GET / 404 in 454ms
+ GET / 404 in 334ms
+ GET / 404 in 474ms
+ GET / 404 in 348ms
+ GET / 404 in 491ms
+ GET / 404 in 510ms
+ GET / 404 in 489ms
+ GET / 404 in 510ms
+ GET / 404 in 588ms
+ GET / 404 in 530ms
+ GET / 404 in 348ms
+ GET / 404 in 470ms
+ GET / 404 in 605ms
+ GET / 404 in 317ms
+ GET / 404 in 512ms
+ GET / 404 in 431ms
+ GET / 404 in 395ms
+ GET / 404 in 464ms
+ GET / 404 in 518ms
+ GET / 404 in 404ms
+ GET / 404 in 654ms
+ GET / 404 in 478ms
+ GET / 404 in 543ms
+ GET / 404 in 377ms
+ GET / 404 in 573ms
+ GET / 404 in 611ms
+ GET / 404 in 453ms
+ GET / 404 in 495ms
+ GET / 404 in 433ms
+ GET / 404 in 468ms
+ GET / 404 in 490ms
+ GET / 404 in 327ms
+ GET / 404 in 427ms
+ GET / 404 in 593ms
+ GET / 404 in 458ms
+ GET / 404 in 482ms
+ GET / 404 in 361ms
+ GET / 404 in 397ms
+ GET / 404 in 491ms
+ GET / 404 in 466ms
+ GET / 404 in 354ms
+ GET / 404 in 309ms
+ GET / 404 in 321ms
+ GET / 404 in 346ms
+ GET / 404 in 345ms
+ GET / 404 in 332ms
+ GET / 404 in 503ms
+ GET / 404 in 333ms
+ GET / 404 in 332ms
+ GET / 404 in 293ms
+ GET / 404 in 300ms
+ GET / 404 in 365ms
+ GET / 404 in 361ms
+ GET / 404 in 341ms
+ GET / 404 in 456ms
+ GET / 404 in 684ms
+ GET / 404 in 303ms
+ GET / 404 in 333ms
+ GET / 404 in 327ms
+ GET / 404 in 301ms
+ GET / 404 in 395ms
+ GET / 404 in 314ms
+ GET / 404 in 364ms
+ GET / 404 in 313ms
+ GET / 404 in 315ms
+ GET / 404 in 368ms
+ GET / 404 in 316ms
+ GET / 404 in 302ms
+ GET / 404 in 377ms
+ GET / 404 in 302ms
+ GET / 404 in 377ms
+ GET / 404 in 325ms
+ GET / 404 in 316ms
+ GET / 404 in 336ms
+ GET / 404 in 300ms
+ GET / 404 in 306ms
+ GET / 404 in 506ms
+ GET / 404 in 308ms
+ GET / 404 in 348ms
+ GET / 404 in 310ms
+ GET / 404 in 317ms
+ GET / 404 in 386ms
+ GET / 404 in 311ms
+ GET / 404 in 324ms
+ GET / 404 in 335ms
+ GET / 404 in 332ms
+ GET / 404 in 329ms
+ GET / 404 in 334ms
+ GET / 404 in 332ms
+ GET / 404 in 512ms
+ GET / 404 in 338ms
+ GET / 404 in 331ms
+ GET / 404 in 318ms
+ GET / 404 in 320ms
+ GET / 404 in 311ms
+ GET / 404 in 312ms
+ GET / 404 in 306ms
+ GET / 404 in 419ms
+ GET / 404 in 307ms
+ GET / 404 in 340ms
+ GET / 404 in 370ms
+ GET / 404 in 363ms
+ GET / 404 in 316ms
+ GET / 404 in 322ms
+ GET / 404 in 324ms
+ GET / 404 in 413ms
+ GET / 404 in 344ms
+ GET / 404 in 334ms
+ GET / 404 in 367ms
+ GET / 404 in 326ms
+ GET / 404 in 308ms
+ GET / 404 in 322ms
+ GET / 404 in 367ms
+ GET / 404 in 501ms
+ GET / 404 in 370ms
+ GET / 404 in 370ms
+ GET / 404 in 403ms
+ GET / 404 in 321ms
+ GET / 404 in 339ms
+ GET / 404 in 450ms
+ GET / 404 in 325ms
+ GET / 404 in 482ms
+ GET / 404 in 320ms
+ GET / 404 in 337ms
+ GET / 404 in 298ms
+ GET / 404 in 429ms
+ GET / 404 in 391ms
+ GET / 404 in 324ms
+ GET / 404 in 370ms
+ GET / 404 in 432ms
+ GET / 404 in 427ms
+ GET / 404 in 320ms
+ GET / 404 in 357ms
+ GET / 404 in 364ms
+ GET / 404 in 327ms
+ GET / 404 in 342ms
+ GET / 404 in 558ms
+ GET / 404 in 583ms
+ GET / 404 in 302ms
+ GET / 404 in 446ms
+ GET / 404 in 423ms
+ GET / 404 in 419ms
+ GET / 404 in 443ms
+ GET / 404 in 419ms
+ GET / 404 in 376ms
+ GET / 404 in 451ms
+ GET / 404 in 344ms
+ GET / 404 in 420ms
+ GET / 404 in 439ms
+ GET / 404 in 439ms
+ GET / 404 in 341ms
+ GET / 404 in 444ms
+ GET / 404 in 437ms
+ GET / 404 in 377ms
+ GET / 404 in 356ms
+ GET / 404 in 340ms
+ GET / 404 in 404ms
+ GET / 404 in 304ms
+ GET / 404 in 415ms
+ GET / 404 in 498ms
+ GET / 404 in 382ms
+ GET / 404 in 350ms
+ GET / 404 in 479ms
+ GET / 404 in 335ms
+ GET / 404 in 496ms
+ GET / 404 in 429ms
+ GET / 404 in 515ms
+ GET / 404 in 407ms
+ GET / 404 in 291ms
+ GET / 404 in 365ms
+ GET / 404 in 360ms
+ GET / 404 in 396ms
+ GET / 404 in 498ms
+ GET / 404 in 471ms
+ GET / 404 in 552ms
+ GET / 404 in 459ms
+ GET / 404 in 408ms
+ GET / 404 in 420ms
+ GET / 404 in 451ms
+ GET / 404 in 354ms
+ GET / 404 in 438ms
+ GET / 404 in 369ms
+ GET / 404 in 609ms
+ GET / 404 in 474ms
+ GET / 404 in 408ms
+ GET / 404 in 473ms
+ GET / 404 in 470ms
+ GET / 404 in 506ms
+ GET / 404 in 498ms
+ GET / 404 in 329ms
+ GET / 404 in 533ms
+ GET / 404 in 309ms
+ GET / 404 in 450ms
+ GET / 404 in 419ms
+ GET / 404 in 429ms
+ GET / 404 in 457ms
+ GET / 404 in 560ms
+ GET / 404 in 412ms
+ GET / 404 in 505ms
+ GET / 404 in 335ms
+ GET / 404 in 467ms
+ GET / 404 in 310ms
+ GET / 404 in 477ms
+ GET / 404 in 340ms
+ GET / 404 in 410ms
+ GET / 404 in 517ms
+ GET / 404 in 527ms
+ GET / 404 in 384ms
+ GET / 404 in 422ms
+ GET / 404 in 310ms
+ GET / 404 in 512ms
+ GET / 404 in 362ms
+ GET / 404 in 483ms
+ GET / 404 in 525ms
+ GET / 404 in 597ms
+ GET / 404 in 469ms
+ GET / 404 in 336ms
+ GET / 404 in 460ms
+ GET / 404 in 538ms
+ GET / 404 in 453ms
+ GET / 404 in 422ms
+ GET / 404 in 364ms
+ GET / 404 in 364ms
+ GET / 404 in 339ms
+ GET / 404 in 352ms
+ GET / 404 in 480ms
+ GET / 404 in 547ms
+ GET / 404 in 649ms
+ GET / 404 in 493ms
+ GET / 404 in 549ms
+ GET / 404 in 362ms
+ GET / 404 in 506ms
+ GET / 404 in 430ms
+ GET / 404 in 355ms
+ GET / 404 in 510ms
+ GET / 404 in 406ms
+ GET / 404 in 367ms
+ GET / 404 in 516ms
+ GET / 404 in 538ms
+ GET / 404 in 489ms
+ GET / 404 in 644ms
+ GET / 404 in 426ms
+ GET / 404 in 492ms
+ GET / 404 in 475ms
+ GET / 404 in 552ms
+ GET / 404 in 563ms
+ GET / 404 in 449ms
+ GET / 404 in 567ms
+ GET / 404 in 418ms
+ GET / 404 in 525ms
+ GET / 404 in 472ms
+ GET / 404 in 481ms
+ GET / 404 in 497ms
+ GET / 404 in 386ms
+ GET / 404 in 578ms
+ GET / 404 in 560ms
+ GET / 404 in 496ms
+ GET / 404 in 606ms
+ GET / 404 in 493ms
+ GET / 404 in 462ms
+ GET / 404 in 486ms
+ GET / 404 in 2074ms
+ GET / 404 in 470ms
+ GET / 404 in 490ms
+ GET / 404 in 350ms
+ GET / 404 in 375ms
+ GET / 404 in 460ms
+ GET / 404 in 329ms
+ GET / 404 in 459ms
+ GET / 404 in 640ms
+ GET / 404 in 479ms
+ GET / 404 in 434ms
+ GET / 404 in 474ms
+ GET / 404 in 507ms
+ GET / 404 in 378ms
+ GET / 404 in 482ms
+ GET / 404 in 391ms
+ GET / 404 in 333ms
+ GET / 404 in 440ms
+ GET / 404 in 361ms
+ GET / 404 in 334ms
+ GET / 404 in 336ms
+ GET / 404 in 524ms
+ GET / 404 in 458ms
+ GET / 404 in 397ms
+ GET / 404 in 369ms
+ GET / 404 in 355ms
+ GET / 404 in 307ms
+ GET / 404 in 462ms
+ GET / 404 in 386ms
+ GET / 404 in 323ms
+ GET / 404 in 377ms
+ GET / 404 in 385ms
+ GET / 404 in 396ms
+ GET / 404 in 650ms
+ GET / 404 in 349ms
+ GET / 404 in 318ms
+ GET / 404 in 329ms
+ GET / 404 in 304ms
+ GET / 404 in 319ms
+ GET / 404 in 457ms
+ GET / 404 in 323ms
+ GET / 404 in 329ms
+ GET / 404 in 347ms
+ GET / 404 in 347ms
+ GET / 404 in 326ms
+ GET / 404 in 362ms
+ GET / 404 in 320ms
+ GET / 404 in 323ms
+ GET / 404 in 350ms
+ GET / 404 in 326ms
+ GET / 404 in 423ms
+ GET / 404 in 464ms
+ GET / 404 in 309ms
+ GET / 404 in 313ms
+ GET / 404 in 386ms
+ GET / 404 in 324ms
+ GET / 404 in 306ms
+ GET / 404 in 322ms
+ GET / 404 in 467ms
+ GET / 404 in 320ms
+ GET / 404 in 311ms
+ GET / 404 in 325ms
+ GET / 404 in 314ms
+ GET / 404 in 312ms
+ GET / 404 in 317ms
+ GET / 404 in 354ms
+ GET / 404 in 516ms
+ GET / 404 in 313ms
+ GET / 404 in 325ms
+ GET / 404 in 353ms
+ GET / 404 in 337ms
+ GET / 404 in 313ms
+ GET / 404 in 385ms
+ GET / 404 in 338ms
+ GET / 404 in 424ms
+ GET / 404 in 313ms
+ GET / 404 in 339ms
+ GET / 404 in 433ms
+ GET / 404 in 350ms
+ GET / 404 in 332ms
+ GET / 404 in 374ms
+ GET / 404 in 338ms
+ GET / 404 in 361ms
+ GET / 404 in 341ms
+ GET / 404 in 316ms
+ GET / 404 in 352ms
+ GET / 404 in 315ms
+ GET / 404 in 308ms
+ GET / 404 in 419ms
+ GET / 404 in 316ms
+ GET / 404 in 367ms
+ GET / 404 in 302ms
+ GET / 404 in 329ms
+ GET / 404 in 385ms
+ GET / 404 in 418ms
+ GET / 404 in 320ms
+ GET / 404 in 356ms
+ GET / 404 in 319ms
+ GET / 404 in 656ms
+ GET / 404 in 384ms
+ GET / 404 in 315ms
+ GET / 404 in 354ms
+ GET / 404 in 333ms
+ GET / 404 in 313ms
+ GET / 404 in 360ms
+ GET / 404 in 389ms
+ GET / 404 in 342ms
+ GET / 404 in 316ms
+ GET / 404 in 441ms
+ GET / 404 in 397ms
+ GET / 404 in 435ms
+ GET / 404 in 326ms
+ GET / 404 in 409ms
+ GET / 404 in 699ms
+ GET / 404 in 352ms
+ GET / 404 in 392ms
+ GET / 404 in 380ms
+ GET / 404 in 342ms
+ GET / 404 in 588ms
+ GET / 404 in 317ms
+ GET / 404 in 416ms
+ GET / 404 in 363ms
+ GET / 404 in 333ms
+ GET / 404 in 436ms
+ GET / 404 in 426ms
+ GET / 404 in 413ms
+ GET / 404 in 377ms
+ GET / 404 in 399ms
+ GET / 404 in 354ms
+ GET / 404 in 442ms
+ GET / 404 in 427ms
+ GET / 404 in 540ms
+ GET / 404 in 422ms
+ GET / 404 in 471ms
+ GET / 404 in 331ms
+ GET / 404 in 464ms
+ GET / 404 in 421ms
+ GET / 404 in 335ms
+ GET / 404 in 413ms
+ GET / 404 in 378ms
+ GET / 404 in 395ms
+ GET / 404 in 351ms
+ GET / 404 in 418ms
+ GET / 404 in 476ms
+ GET / 404 in 396ms
+ GET / 404 in 350ms
+ GET / 404 in 333ms
+ GET / 404 in 483ms
+ GET / 404 in 371ms
+ GET / 404 in 331ms
+ GET / 404 in 415ms
+ GET / 404 in 541ms
+ GET / 404 in 419ms
+ GET / 404 in 433ms
+ GET / 404 in 408ms
+ GET / 404 in 420ms
+ GET / 404 in 359ms
+ GET / 404 in 514ms
+ GET / 404 in 353ms
+ GET / 404 in 513ms
+ GET / 404 in 408ms
+ GET / 404 in 681ms
+ GET / 404 in 334ms
+ GET / 404 in 481ms
+ GET / 404 in 331ms
+ GET / 404 in 469ms
+ GET / 404 in 380ms
+ GET / 404 in 497ms
+ GET / 404 in 377ms
+ GET / 404 in 392ms
+ GET / 404 in 313ms
+ GET / 404 in 420ms
+ GET / 404 in 538ms
+ GET / 404 in 518ms
+ GET / 404 in 510ms
+ GET / 404 in 491ms
+ GET / 404 in 365ms
+ GET / 404 in 391ms
+ GET / 404 in 410ms
+ GET / 404 in 470ms
+ GET / 404 in 517ms
+ GET / 404 in 448ms
+ GET / 404 in 449ms
+ GET / 404 in 456ms
+ GET / 404 in 331ms
+ GET / 404 in 328ms
+ GET / 404 in 464ms
+ GET / 404 in 418ms
+ GET / 404 in 437ms
+ GET / 404 in 363ms
+ GET / 404 in 445ms
+ GET / 404 in 330ms
+ GET / 404 in 479ms
+ GET / 404 in 535ms
+ GET / 404 in 471ms
+ GET / 404 in 677ms
+ GET / 404 in 582ms
+ GET / 404 in 588ms
+ GET / 404 in 416ms
+ GET / 404 in 491ms
+ GET / 404 in 515ms
+ GET / 404 in 532ms
+ GET / 404 in 431ms
+ GET / 404 in 516ms
+ GET / 404 in 355ms
+ GET / 404 in 553ms
+ GET / 404 in 330ms
+ GET / 404 in 685ms
+ GET / 404 in 473ms
+ GET / 404 in 516ms
+ GET / 404 in 492ms
+ GET / 404 in 590ms
+ GET / 404 in 492ms
+ GET / 404 in 480ms
+ GET / 404 in 482ms
+ GET / 404 in 420ms
+ GET / 404 in 542ms
+ GET / 404 in 745ms
+ GET / 404 in 334ms
+ GET / 404 in 598ms
+ GET / 404 in 401ms
+ GET / 404 in 486ms
+ GET / 404 in 328ms
+ GET / 404 in 617ms
+ GET / 404 in 538ms
+ GET / 404 in 622ms
+ GET / 404 in 347ms
+ GET / 404 in 409ms
+ GET / 404 in 326ms
+ GET / 404 in 356ms
+ GET / 404 in 509ms
+ GET / 404 in 432ms
+ GET / 404 in 338ms
+ GET / 404 in 377ms
+ GET / 404 in 471ms
+ GET / 404 in 580ms
+ GET / 404 in 392ms
+ GET / 404 in 357ms
+ GET / 404 in 331ms
+ GET / 404 in 491ms
+ GET / 404 in 688ms
+ GET / 404 in 503ms
+ GET / 404 in 427ms
+ GET / 404 in 472ms
+ GET / 404 in 335ms
+ GET / 404 in 463ms
+ GET / 404 in 526ms
+ GET / 404 in 574ms
+ GET / 404 in 617ms
+ GET / 404 in 523ms
+ GET / 404 in 481ms
+ GET / 404 in 481ms
+ GET / 404 in 470ms
+ GET / 404 in 374ms
+ GET / 404 in 480ms
+ GET / 404 in 316ms
+ GET / 404 in 417ms
+ GET / 404 in 349ms
+ GET / 404 in 344ms
+ GET / 404 in 325ms
+ GET / 404 in 317ms
+ GET / 404 in 349ms
+ GET / 404 in 384ms
+ GET / 404 in 493ms
+ GET / 404 in 319ms
+ GET / 404 in 463ms
+ GET / 404 in 528ms
+ GET / 404 in 695ms
+ GET / 404 in 413ms
+ GET / 404 in 459ms
+ GET / 404 in 372ms
+ GET / 404 in 356ms
+ GET / 404 in 387ms
+ GET / 404 in 526ms
+ GET / 404 in 357ms
+ GET / 404 in 515ms
+ GET / 404 in 340ms
+ GET / 404 in 356ms
+ GET / 404 in 330ms
+ GET / 404 in 331ms
+ GET / 404 in 404ms
+ GET / 404 in 445ms
+ GET / 404 in 677ms
+ GET / 404 in 327ms
+ GET / 404 in 404ms
+ GET / 404 in 474ms
+ GET / 404 in 444ms
+ GET / 404 in 374ms
+ GET / 404 in 381ms
+ GET / 404 in 531ms
+ GET / 404 in 686ms
+ GET / 404 in 379ms
+ GET / 404 in 470ms
+ GET / 404 in 537ms
+ GET / 404 in 557ms
+ GET / 404 in 453ms
+ GET / 404 in 401ms
+ GET / 404 in 368ms
+ GET / 404 in 410ms
+ GET / 404 in 416ms
+ GET / 404 in 814ms
+ GET / 404 in 632ms
+ GET / 404 in 351ms
+ GET / 404 in 381ms
+ GET / 404 in 344ms
+ GET / 404 in 377ms
+ GET / 404 in 323ms
+ GET / 404 in 358ms
+ GET / 404 in 360ms
+ GET / 404 in 373ms
+ GET / 404 in 421ms
+ GET / 404 in 780ms
+ GET / 404 in 335ms
+ GET / 404 in 476ms
+ GET / 404 in 642ms
+ GET / 404 in 480ms
+ GET / 404 in 331ms
+ GET / 404 in 312ms
+ GET / 404 in 409ms
+ GET / 404 in 491ms
+ GET / 404 in 434ms
+ GET / 404 in 357ms
+ GET / 404 in 330ms
+ GET / 404 in 398ms
+ GET / 404 in 322ms
+ GET / 404 in 320ms
+ GET / 404 in 353ms
+ GET / 404 in 367ms
+ GET / 404 in 378ms
+ GET / 404 in 601ms
+ GET / 404 in 543ms
+ GET / 404 in 328ms
+ GET / 404 in 351ms
+ GET / 404 in 500ms
+ GET / 404 in 546ms
+ GET / 404 in 582ms
+ GET / 404 in 599ms
+ GET / 404 in 328ms
+ GET / 404 in 631ms
+ GET / 404 in 392ms
+ GET / 404 in 371ms
+ GET / 404 in 377ms
+ GET / 404 in 934ms
+ GET / 404 in 719ms
+ GET / 404 in 526ms
+ GET / 404 in 427ms
+ GET / 404 in 1028ms
+ GET / 404 in 460ms
+ GET / 404 in 520ms
+ GET / 404 in 585ms
+ GET / 404 in 500ms
+ GET / 404 in 1035ms
+ GET / 404 in 571ms
+ GET / 404 in 1282ms
+ GET / 404 in 711ms
+ GET / 404 in 544ms
+ GET / 404 in 654ms
+ GET / 404 in 1434ms
+ GET / 404 in 1066ms
+ GET / 404 in 992ms
+ GET / 404 in 512ms
+ GET / 404 in 359ms
+ GET / 404 in 388ms
+ GET / 404 in 417ms
+ GET / 404 in 411ms
+ GET / 404 in 425ms
+ GET / 404 in 479ms

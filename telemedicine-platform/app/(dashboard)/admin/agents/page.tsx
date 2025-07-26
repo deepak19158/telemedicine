@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRequireRole } from '../../../../lib/hooks/useAuth'
-import { useApi } from '../../../../lib/hooks/useApi'
+import { useApi, useApiMutation } from '../../../../lib/hooks/useApi'
 import { apiClient } from '../../../../lib/api-client'
 import { 
   Users, 
@@ -18,7 +18,10 @@ import {
   Phone,
   AlertCircle,
   Activity,
-  CreditCard
+  CreditCard,
+  X,
+  Save,
+  Copy
 } from 'lucide-react'
 
 export default function AdminAgentsPage() {
@@ -27,6 +30,14 @@ export default function AdminAgentsPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedAgent, setSelectedAgent] = useState<any>(null)
   const [showCreateCodeModal, setShowCreateCodeModal] = useState(false)
+  const [showAgentDetailsModal, setShowAgentDetailsModal] = useState(false)
+  const [codeFormData, setCodeFormData] = useState({
+    code: '',
+    discountType: 'percentage',
+    discountValue: '',
+    maxUsage: '',
+    expirationDate: ''
+  })
   
   // Fetch agents
   const { 
@@ -51,6 +62,28 @@ export default function AdminAgentsPage() {
     data: analyticsData, 
     loading: analyticsLoading 
   } = useApi(() => apiClient.get('/admin/agents/analytics', { period: '30' }))
+
+  // Create referral code mutation
+  const { mutate: createCode, loading: creatingCode } = useApiMutation(
+    (codeData: any) => apiClient.post('/admin/agents/codes', codeData),
+    {
+      onSuccess: () => {
+        setShowCreateCodeModal(false)
+        setCodeFormData({
+          code: '',
+          discountType: 'percentage',
+          discountValue: '',
+          maxUsage: '',
+          expirationDate: ''
+        })
+        refetchCodes()
+      },
+      onError: (error) => {
+        console.error('Failed to create referral code:', error)
+        alert('Failed to create referral code: ' + error)
+      }
+    }
+  )
 
   const isLoading = authLoading || agentsLoading || analyticsLoading
 
@@ -83,6 +116,40 @@ export default function AdminAgentsPage() {
   const agents = agentsData?.data?.agents || []
   const analytics = analyticsData?.data || {}
   const referralCodes = codesData?.data?.codes || []
+
+  console.log('🔍 Admin Agents Debug:', {
+    agentsData,
+    agents: agents.length,
+    analytics,
+    referralCodes: referralCodes.length,
+    hasAgentsData: !!agentsData
+  })
+
+  const handleCreateCode = async () => {
+    if (!selectedAgent || !codeFormData.code || !codeFormData.discountValue || !codeFormData.maxUsage) {
+      alert('Please fill in all required fields')
+      return
+    }
+
+    await createCode({
+      agentId: selectedAgent._id,
+      code: codeFormData.code,
+      discountType: codeFormData.discountType,
+      discountValue: parseInt(codeFormData.discountValue),
+      maxUsage: parseInt(codeFormData.maxUsage),
+      expirationDate: codeFormData.expirationDate || null
+    })
+  }
+
+  const handleViewDetails = (agent: any) => {
+    setSelectedAgent(agent)
+    setShowAgentDetailsModal(true)
+  }
+
+  const handleAssignCode = (agent: any) => {
+    setSelectedAgent(agent)
+    setShowCreateCodeModal(true)
+  }
 
   const AgentCard = ({ agent }: { agent: any }) => (
     <div className="p-6 bg-medical-50 rounded-xl border border-medical-200">
@@ -146,7 +213,7 @@ export default function AdminAgentsPage() {
       <div className="flex space-x-2">
         <button 
           className="btn-outline text-xs flex-1"
-          onClick={() => setSelectedAgent(agent)}
+          onClick={() => handleViewDetails(agent)}
         >
           <Eye className="w-3 h-3 mr-1" />
           View Details
@@ -154,10 +221,7 @@ export default function AdminAgentsPage() {
         
         <button 
           className="btn-primary text-xs flex-1"
-          onClick={() => {
-            setSelectedAgent(agent)
-            setShowCreateCodeModal(true)
-          }}
+          onClick={() => handleAssignCode(agent)}
         >
           <Plus className="w-3 h-3 mr-1" />
           Assign Code
@@ -352,6 +416,198 @@ export default function AdminAgentsPage() {
           </div>
         </div>
       </div>
+
+      {/* Agent Details Modal */}
+      {showAgentDetailsModal && selectedAgent && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div className="p-6 border-b border-medical-200">
+              <div className="flex items-center justify-between">
+                <h2 className="heading-secondary">Agent Details</h2>
+                <button 
+                  onClick={() => setShowAgentDetailsModal(false)}
+                  className="p-2 hover:bg-medical-100 rounded-lg"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            
+            <div className="p-6">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                  <Users className="w-8 h-8 text-orange-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-medical-900">
+                    {selectedAgent.profile?.name || selectedAgent.name}
+                  </h3>
+                  <p className="text-medical-600">{selectedAgent.email}</p>
+                  <span className={`badge-${selectedAgent.isActive ? 'success' : 'error'} mt-1`}>
+                    {selectedAgent.isActive ? 'Active' : 'Inactive'}
+                  </span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div className="text-center p-3 bg-medical-50 rounded-lg">
+                  <div className="text-lg font-bold text-medical-900">{selectedAgent.stats?.totalCodes || 0}</div>
+                  <div className="text-sm text-medical-600">Total Codes</div>
+                </div>
+                <div className="text-center p-3 bg-medical-50 rounded-lg">
+                  <div className="text-lg font-bold text-medical-900">{selectedAgent.stats?.successfulReferrals || 0}</div>
+                  <div className="text-sm text-medical-600">Successful Referrals</div>
+                </div>
+                <div className="text-center p-3 bg-medical-50 rounded-lg">
+                  <div className="text-lg font-bold text-medical-900">₹{selectedAgent.stats?.totalCommissions || 0}</div>
+                  <div className="text-sm text-medical-600">Total Commissions</div>
+                </div>
+                <div className="text-center p-3 bg-medical-50 rounded-lg">
+                  <div className="text-lg font-bold text-medical-900">{selectedAgent.stats?.activeCodes || 0}</div>
+                  <div className="text-sm text-medical-600">Active Codes</div>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                {selectedAgent.profile?.phone && (
+                  <div className="flex items-center">
+                    <Phone className="w-4 h-4 mr-3 text-medical-400" />
+                    <span className="text-medical-700">{selectedAgent.profile.phone}</span>
+                  </div>
+                )}
+                <div className="flex items-center">
+                  <Calendar className="w-4 h-4 mr-3 text-medical-400" />
+                  <span className="text-medical-700">Joined {new Date(selectedAgent.createdAt).toLocaleDateString()}</span>
+                </div>
+                {selectedAgent.lastLoginAt && (
+                  <div className="flex items-center">
+                    <Activity className="w-4 h-4 mr-3 text-medical-400" />
+                    <span className="text-medical-700">Last active {new Date(selectedAgent.lastLoginAt).toLocaleDateString()}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Create Code Modal */}
+      {showCreateCodeModal && selectedAgent && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-md w-full">
+            <div className="p-6 border-b border-medical-200">
+              <div className="flex items-center justify-between">
+                <h2 className="heading-secondary">Assign Referral Code</h2>
+                <button 
+                  onClick={() => setShowCreateCodeModal(false)}
+                  className="p-2 hover:bg-medical-100 rounded-lg"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <p className="text-medical-600 mt-1">
+                Creating code for {selectedAgent.profile?.name || selectedAgent.name}
+              </p>
+            </div>
+            
+            <div className="p-6">
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-medical-700 mb-1">
+                    Code *
+                  </label>
+                  <input
+                    type="text"
+                    className="input-primary w-full"
+                    placeholder="e.g., AGENT001"
+                    value={codeFormData.code}
+                    onChange={(e) => setCodeFormData({...codeFormData, code: e.target.value})}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-medical-700 mb-1">
+                    Discount Type *
+                  </label>
+                  <select
+                    className="input-primary w-full"
+                    value={codeFormData.discountType}
+                    onChange={(e) => setCodeFormData({...codeFormData, discountType: e.target.value})}
+                  >
+                    <option value="percentage">Percentage (%)</option>
+                    <option value="fixed">Fixed Amount (₹)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-medical-700 mb-1">
+                    Discount Value *
+                  </label>
+                  <input
+                    type="number"
+                    className="input-primary w-full"
+                    placeholder={codeFormData.discountType === 'percentage' ? '15' : '100'}
+                    value={codeFormData.discountValue}
+                    onChange={(e) => setCodeFormData({...codeFormData, discountValue: e.target.value})}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-medical-700 mb-1">
+                    Max Usage *
+                  </label>
+                  <input
+                    type="number"
+                    className="input-primary w-full"
+                    placeholder="50"
+                    value={codeFormData.maxUsage}
+                    onChange={(e) => setCodeFormData({...codeFormData, maxUsage: e.target.value})}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-medical-700 mb-1">
+                    Expiration Date (Optional)
+                  </label>
+                  <input
+                    type="date"
+                    className="input-primary w-full"
+                    value={codeFormData.expirationDate}
+                    onChange={(e) => setCodeFormData({...codeFormData, expirationDate: e.target.value})}
+                  />
+                </div>
+              </div>
+
+              <div className="flex space-x-3 mt-6">
+                <button
+                  onClick={() => setShowCreateCodeModal(false)}
+                  className="btn-outline flex-1"
+                  disabled={creatingCode}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleCreateCode}
+                  className="btn-primary flex-1"
+                  disabled={creatingCode}
+                >
+                  {creatingCode ? (
+                    <div className="flex items-center">
+                      <div className="spinner-medical w-4 h-4 mr-2"></div>
+                      Creating...
+                    </div>
+                  ) : (
+                    <>
+                      <Save className="w-4 h-4 mr-2" />
+                      Create Code
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

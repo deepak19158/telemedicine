@@ -13,6 +13,7 @@ import {
   Home,
   Calendar,
   Users,
+  UserCheck,
   BarChart3,
   CreditCard,
   Heart,
@@ -84,6 +85,7 @@ export function Navigation() {
         return [
           ...baseItems,
           { name: "Users", href: "/admin/users", icon: Users },
+          { name: "Patients", href: "/admin/patients", icon: UserCheck },
           { name: "Doctors", href: "/admin/doctors", icon: User },
           { name: "Agents", href: "/admin/agents", icon: Users },
           { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },

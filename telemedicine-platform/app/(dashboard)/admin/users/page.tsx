@@ -17,7 +17,8 @@ import {
   AlertCircle,
   Eye,
   Edit,
-  Shield
+  Shield,
+  RefreshCw
 } from 'lucide-react'
 
 export default function AdminUsersPage() {
@@ -31,17 +32,21 @@ export default function AdminUsersPage() {
   const { page, limit, nextPage, prevPage, goToPage, params } = usePagination(1, 12)
   
   // Fetch data
+  const queryParams = {
+    ...params,
+    search: debouncedQuery,
+    role: selectedRole !== 'all' ? selectedRole : undefined,
+    status: selectedStatus !== 'all' ? selectedStatus : undefined
+  }
+  
+  console.log('🔍 Admin Users Page Debug - Query params:', queryParams)
+  
   const { 
     data: usersData, 
     loading: usersLoading, 
     error: usersError,
     refetch: refetchUsers
-  } = useAdminUsers({
-    ...params,
-    search: debouncedQuery,
-    role: selectedRole !== 'all' ? selectedRole : undefined,
-    status: selectedStatus !== 'all' ? selectedStatus : undefined
-  })
+  } = useAdminUsers(queryParams)
 
   const { data: analyticsData } = useUserAnalytics('30')
   
@@ -76,9 +81,18 @@ export default function AdminUsersPage() {
     )
   }
 
-  const users = usersData?.users || []
-  const pagination = usersData?.pagination || {}
-  const analytics = analyticsData?.stats || {}
+  const users = usersData?.data?.users || []
+  const pagination = usersData?.data?.pagination || {}
+  const analytics = analyticsData?.data?.stats || {}
+
+  console.log('🔍 Admin Users Debug:', {
+    usersData,
+    users: users.length,
+    pagination,
+    analytics,
+    hasUsersData: !!usersData,
+    usersDataKeys: usersData ? Object.keys(usersData) : []
+  })
 
   const handleStatusUpdate = async (userId: string, newStatus: boolean, reason?: string) => {
     try {
@@ -259,32 +273,50 @@ export default function AdminUsersPage() {
               ) : (
                 <div className="col-span-full text-center py-12">
                   <Users className="w-16 h-16 text-medical-300 mx-auto mb-4" />
-                  <h3 className="text-lg font-medium text-medical-900 mb-2">No users found</h3>
+                  <h3 className="text-lg font-medium text-medical-900 mb-2">
+                    {usersData ? 'No users found' : 'Loading users...'}
+                  </h3>
                   <p className="text-medical-600">
-                    {query ? 'Try adjusting your search or filters.' : 'No users match your current filters.'}
+                    {query 
+                      ? 'Try adjusting your search or filters.' 
+                      : usersData 
+                        ? 'No users match your current filters. Try creating some users or adjusting your filters.'
+                        : 'Please wait while we load the user data.'
+                    }
                   </p>
+                  {!usersData && (
+                    <div className="mt-4">
+                      <button 
+                        onClick={() => refetchUsers()}
+                        className="btn-primary"
+                      >
+                        <RefreshCw className="w-4 h-4 mr-2" />
+                        Refresh
+                      </button>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
 
             {/* Pagination */}
-            {pagination.pages > 1 && (
+            {pagination.totalPages > 1 && (
               <div className="flex items-center justify-between mt-6 pt-6 border-t border-medical-200">
                 <div className="text-sm text-medical-600">
-                  Showing {((page - 1) * limit) + 1} to {Math.min(page * limit, pagination.total)} of {pagination.total} users
+                  Showing {((page - 1) * limit) + 1} to {Math.min(page * limit, pagination.totalUsers)} of {pagination.totalUsers} users
                 </div>
                 <div className="flex space-x-2">
                   <button 
                     className="btn-outline"
                     onClick={prevPage}
-                    disabled={!pagination.hasPrev}
+                    disabled={!pagination.hasPrevPage}
                   >
                     Previous
                   </button>
                   <button 
                     className="btn-outline"
                     onClick={nextPage}
-                    disabled={!pagination.hasNext}
+                    disabled={!pagination.hasNextPage}
                   >
                     Next
                   </button>

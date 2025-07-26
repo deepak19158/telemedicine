@@ -776,6 +776,9 @@ video {
 .max-h-\[90vh\] {
   max-height: 90vh;
 }
+.max-h-screen {
+  max-height: 100vh;
+}
 .min-h-full {
   min-height: 100%;
 }
@@ -2463,6 +2466,11 @@ a {
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-medical-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-medical-50:hover {

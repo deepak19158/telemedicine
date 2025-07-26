@@ -10,7 +10,8 @@
       "Bash(npm run server:*)",
       "Bash(timeout:*)",
       "Bash(npm run dev:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
